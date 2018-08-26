@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 256, in script
+    $ c_aff += 10
+  File "game/script.rpy", line 256, in <module>
+    $ c_aff += 10
+NameError: name 'c_aff' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 256, in script
+    $ c_aff += 10
+  File "/Users/karolina/Desktop/renpy-7.0.0-sdk/renpy/ast.py", line 862, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/karolina/Desktop/renpy-7.0.0-sdk/renpy/python.py", line 1912, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 256, in <module>
+    $ c_aff += 10
+NameError: name 'c_aff' is not defined
+
+Darwin-17.7.0-x86_64-i386-64bit
+Ren'Py 7.0.0.196
+Voltron Force Romance Sim 1.0
+Fri Aug 24 11:17:06 2018
